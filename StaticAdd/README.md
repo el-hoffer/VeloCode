@@ -1,4 +1,4 @@
-# VMW-sdwan-static-add
+# static-add.py
 Simple script to add static routes read from a CSV to a specific edge
 
 routelist.csv- CSV file where you’ll enter the static route info so just save it under the same name in the same folder that you’ll be running the script from.  The way it’s written now assumes we’re routing out of a physical interface but if you’ll need to specify sub-interfaces you can add a column for that and reference it in row 30 of the main script (which is currently just hard coded as “-1” indicating no sub-interface) as with some of the other optional parameters.  You should be able to just enter as many rows as you need.
