@@ -6,11 +6,11 @@ import scriptvars
 import requests
 import json
 
-token = "Token %s" %(os.environ['VCO_Token'])
+token = f"Token {os.environ['VCO_Token']}"
 headers = {"Content-Type": "application/json", "Authorization": token}
-vco_url = 'https://' + os.environ['VCO_URL'] + '/portal/rest/'
-get_enterprises = vco_url + 'network/getNetworkEnterprises'
-find_user = vco_url + 'enterpriseUser/getEnterpriseUser'
+vco_url = f"https://{os.environ['VCO_URL']}/portal/rest/"
+get_enterprises = f"{vco_url}network/getNetworkEnterprises"
+find_user = f"{vco_url}enterpriseUser/getEnterpriseUser"
 
 
 
